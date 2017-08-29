@@ -24,32 +24,37 @@
 
   .post-details {
     text-align: center;
+
+    .title {
+      text-transform: capitalize;
+      font-size: 0.8em;
+      font-family: $headings-font;
+      color: #000000;
+      text-shadow: 0 0 1px #f7f7f7;
+    }
+
+    .category {
+      text-transform: uppercase;
+      display: inline-block;
+      margin-bottom: $unit-small;
+      font-size: 1em;
+    }
+    .category.travel {
+      color: $travel;
+    }
+    .category.food {
+      color: $food;
+    }
+    .category.lifestyle {
+      color: $lifestyle;
+    }
+    .category.culture {
+      color: $culture;
+    }
+
   }
-  .post-details .title {
-    text-transform: capitalize;
-    font-size: 0.8em;
-    font-family: $headings-font;
-    color: #000000;
-    text-shadow: 0 0 1px #f7f7f7;
-  }
-  .post-details .category {
-    text-transform: uppercase;
-    display: inline-block;
-    margin-bottom: $unit-small;
-    font-size: 1em;
-  }
-  .category.travel {
-    color: $travel;
-  }
-  .category.food {
-    color: $food;
-  }
-  .category.lifestyle {
-    color: $lifestyle;
-  }
-  .category.culture {
-    color: $culture;
-  }
+
+
 
 }
 
@@ -57,7 +62,11 @@
   .grid-item {
     margin-bottom: 0;
   }
-
+  .post-details {
+    .title {
+      font-size: 1em;
+    }
+  }
   .grid-wrapper {
     display: grid;
     grid-gap: $unit-small;

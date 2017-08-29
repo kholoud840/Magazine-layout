@@ -82,29 +82,32 @@ nav a:hover {
   z-index: -1; }
 .grid-wrapper .post-details {
   text-align: center; }
-.grid-wrapper .post-details .title {
-  text-transform: capitalize;
-  font-size: 0.8em;
-  font-family: "PT Serif";
-  color: #000000;
-  text-shadow: 0 0 1px #f7f7f7; }
-.grid-wrapper .post-details .category {
-  text-transform: uppercase;
-  display: inline-block;
-  margin-bottom: 8px;
-  font-size: 1em; }
-.grid-wrapper .category.travel {
-  color: #ffae33; }
-.grid-wrapper .category.food {
-  color: #0fd150; }
-.grid-wrapper .category.lifestyle {
-  color: #354dff; }
-.grid-wrapper .category.culture {
-  color: #ff54c3; }
+  .grid-wrapper .post-details .title {
+    text-transform: capitalize;
+    font-size: 0.8em;
+    font-family: "PT Serif";
+    color: #000000;
+    text-shadow: 0 0 1px #f7f7f7; }
+  .grid-wrapper .post-details .category {
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 8px;
+    font-size: 1em; }
+  .grid-wrapper .post-details .category.travel {
+    color: #ffae33; }
+  .grid-wrapper .post-details .category.food {
+    color: #0fd150; }
+  .grid-wrapper .post-details .category.lifestyle {
+    color: #354dff; }
+  .grid-wrapper .post-details .category.culture {
+    color: #ff54c3; }
 
 @media (min-width: 500px) {
   .grid-item {
     margin-bottom: 0; }
+
+  .post-details .title {
+    font-size: 1em; }
 
   .grid-wrapper {
     display: grid;
