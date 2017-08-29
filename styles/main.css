@@ -1,0 +1,171 @@
+/**********fonts*********/
+/******links colors******/
+/*****screen sizes*****/
+/*****units*********/
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+h1, h2, h3 {
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+.content {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px; }
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+p {
+  margin: 0; }
+
+header {
+  text-align: center;
+  padding: 32px 0; }
+  header .content {
+    padding: 0; }
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+nav .nav-item {
+  display: inline-block;
+  flex-basis: 50%;
+  border-bottom: 1px solid #eee; }
+nav a {
+  color: #000;
+  display: inline-block;
+  padding: 16px;
+  text-transform: uppercase; }
+nav a:hover {
+  border-bottom: 2px solid; }
+
+@media (min-width: 500px) {
+  nav ul {
+    display: block;
+    margin-right: -16px; }
+  nav .nav-item {
+    display: inline-block;
+    margin-right: 16px;
+    border-bottom: none; }
+  nav a {
+    padding: 8px; } }
+.grid-wrapper .grid-item {
+  position: relative;
+  padding: 16px;
+  min-height: 200px;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center; }
+.grid-wrapper .grid-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1; }
+.grid-wrapper .post-details {
+  text-align: center; }
+.grid-wrapper .post-details .title {
+  text-transform: capitalize;
+  font-size: 0.8em;
+  font-family: "PT Serif";
+  color: #000000;
+  text-shadow: 0 0 1px #f7f7f7; }
+.grid-wrapper .post-details .category {
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 8px;
+  font-size: 1em; }
+.grid-wrapper .category.travel {
+  color: #ffae33; }
+.grid-wrapper .category.food {
+  color: #0fd150; }
+.grid-wrapper .category.lifestyle {
+  color: #354dff; }
+.grid-wrapper .category.culture {
+  color: #ff54c3; }
+
+@media (min-width: 500px) {
+  .grid-item {
+    margin-bottom: 0; }
+
+  .grid-wrapper {
+    display: grid;
+    grid-gap: 8px;
+    grid-template-rows: 500px 200px;
+    grid-template-columns: repeat(3, 1fr); }
+
+  .item1 {
+    grid-column: 1/4; }
+
+  .item2 {
+    grid-column: 1; }
+
+  .item3 {
+    grid-column: 2; }
+
+  .item4 {
+    grid-column: 3; }
+
+  .item5 {
+    grid-column: 1/4; }
+
+  .item6 {
+    grid-column: 1/3; } }
+@media (min-width: 800px) {
+  .grid-wrapper {
+    grid-template-columns: repeat(5, 1fr); }
+
+  .grid-item {
+    position: relative;
+    overflow: hidden; }
+    .grid-item .post-details .title {
+      font-size: 1.2em; }
+
+  .grid-item.big {
+    justify-content: center; }
+    .grid-item.big .post-details .title {
+      font-size: 2.4em; }
+
+  .grid-item img {
+    transition: .3s ease-in-out; }
+
+  .grid-item:hover img {
+    transform: scale(1.3); }
+
+  .item1 {
+    grid-column: 1/4; }
+
+  .item2 {
+    grid-column: 4; }
+
+  .item3 {
+    grid-column: 5; }
+
+  .item4 {
+    grid-column: 1; }
+
+  .item5 {
+    grid-column: 2; }
+
+  .item6 {
+    grid-column: 3/5; } }
+
+/*# sourceMappingURL=main.css.map */
